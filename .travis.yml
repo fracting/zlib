@@ -1,9 +1,12 @@
 os:
   - linux
+
 before_script:
   - apt-get install gcc-mingw-w64-i686
   - apt-get install wine
+
 language: c
+
 compiler:
   - i686-w64-mingw32-gcc
 
