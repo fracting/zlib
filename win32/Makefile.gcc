@@ -41,7 +41,7 @@ SHARED_MODE=0
 #LOC = -DASMV
 #LOC = -DDEBUG -g
 
-PREFIX =
+PREFIX = i686-w64-mingw32-
 CC = $(PREFIX)gcc
 CFLAGS = $(LOC) -O3 -Wall
 
