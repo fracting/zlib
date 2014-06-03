@@ -8,7 +8,7 @@ before_script:
 language: c
 
 compiler:
-  - i686-w64-mingw32-gcc
+  - gcc
 
 script:
   - make -f win32/Makefile.gcc
