@@ -18,7 +18,9 @@ compiler:
   - gcc
 
 script:
+  - sudo update-binfmts --disable wine
   - make -f win32/Makefile.gcc
+  - sudo update-binfmts --enable wine
   - wine example.exe
   - wine minigzip.exe -d foo.gz
   - wine example_d.exe
