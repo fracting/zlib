@@ -12,7 +12,8 @@ notify:
     image: plugins/drone-irc
     prefix: build
     nick: drone
-    channel: wine-zh
+    channel: #wine-zh
     server:
       host: irc.oftc.net
       port: 6667
+    on_started: true
