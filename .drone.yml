@@ -6,3 +6,13 @@ build:
     - ./configure
     - make
     - make test
+
+notify:
+  irc:
+#    image: plugins/drone-irc
+    prefix: build
+    nick: drone
+    channel: wine-zh
+    server:
+      host: chat.freenode.net
+      port: 6667
