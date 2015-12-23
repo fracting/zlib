@@ -14,5 +14,5 @@ notify:
     nick: drone
     channel: wine-zh
     server:
-      host: chat.freenode.net
+      host: irc.oftc.net
       port: 6667
