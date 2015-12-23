@@ -9,7 +9,7 @@ build:
 
 notify:
   irc:
-#    image: plugins/drone-irc
+    image: plugins/drone-irc
     prefix: build
     nick: drone
     channel: wine-zh
