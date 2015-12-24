@@ -3,6 +3,7 @@ build:
   environment:
     - DEBIAN_FRONTEND=noninteractive
   commands:
+    - pwd
     - ./configure
     - make
     - make test
@@ -11,8 +12,7 @@ notify:
   irc:
     prefix: build
     nick: drone
-    channel: '#wine-zh'
+    channel: wine-zh
     server:
       host: irc.oftc.net
       port: 6667
-    on_started: true
