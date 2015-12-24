@@ -6,6 +6,10 @@ build:
     - DEBIAN_FRONTEND=noninteractive
   commands:
     - pwd
+    - echo $DRONE_REPO
+    - echo $DRONE_BRANCH
+    - echo $DRONE_COMMIT
+    - echo $DRONE_DIR
     - ./configure
     - make
     - make test
