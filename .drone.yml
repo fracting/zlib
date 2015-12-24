@@ -1,3 +1,5 @@
+debug: true
+
 build:
   image: gcc:4.8
   environment:
@@ -7,7 +9,6 @@ build:
     - ./configure
     - make
     - make test
-
 
 notify:
   irc:
