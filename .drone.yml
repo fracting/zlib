@@ -1,7 +1,7 @@
 debug: true
 
 build:
-  image: gcc:4.8
+  image: fracting/msys32-docker:latest
   environment:
     - DEBIAN_FRONTEND=noninteractive
   commands:
@@ -10,9 +10,7 @@ build:
     - echo $DRONE_BRANCH
     - echo $DRONE_COMMIT
     - echo $DRONE_DIR
-    - ./configure
-    - make
-    - make test
+    - msys2-shell -c echo hello drone
 
 notify:
   irc:
