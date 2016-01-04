@@ -10,6 +10,7 @@ build:
     - echo $DRONE_BRANCH
     - echo $DRONE_COMMIT
     - echo $DRONE_DIR
+    - ls /usr/bin
     - msys2-shell -c echo hello drone
 
 notify:
