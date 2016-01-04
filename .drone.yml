@@ -5,16 +5,17 @@ build:
   image: fracting/msys32-docker
   script:
     - pwd
+    - gcc -v || true
     - echo $DRONE_REPO
     - echo $DRONE_BRANCH
     - echo $DRONE_COMMIT
     - echo $DRONE_DIR
     - echo $HOME
     - echo $USER
-    - ls ~/.wine
+    - ls ~/.wine || true
     - wine --version
     - ls /usr/bin
-    - msys2-shell -c echo hello drone
+    - msys2-shell -c echo hello drone || true
 
 notify:
   irc:
