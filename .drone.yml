@@ -1,7 +1,8 @@
 debug: true
 
 build:
-  image: fracting/msys32-docker:latest
+  #image: fracting/msys32-docker:latest
+  image: fracting/msys32-docker:nonexistent
   environment:
     - DEBIAN_FRONTEND=noninteractive
   commands:
