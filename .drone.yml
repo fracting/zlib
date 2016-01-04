@@ -12,6 +12,7 @@ build:
     - echo $DRONE_COMMIT
     - echo $DRONE_DIR
     - ls /usr/bin
+    - wine --version
     - msys2-shell -c echo hello drone
 
 notify:
