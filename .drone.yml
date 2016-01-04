@@ -1,5 +1,3 @@
-debug: true
-
 build:
   #image: fracting/msys32-docker:latest
   image: fracting/msys32-docker
@@ -15,7 +13,7 @@ build:
     - ls ~/.wine || true
     - wine --version
     - ls /usr/bin
-    - msys2-shell -c echo hello drone || true
+    - msys2-shell -c echo hello drone 
 
 notify:
   irc:
