@@ -3,7 +3,7 @@ debug: true
 build:
   #image: fracting/msys32-docker:latest
   image: fracting/msys32-docker
-  commands:
+  script:
     - pwd
     - echo $DRONE_REPO
     - echo $DRONE_BRANCH
