@@ -1,7 +1,7 @@
 build:
   #image: fracting/msys32-docker:latest
   image: fracting/msys32-docker
-  script:
+  command:
     - pwd
     - gcc -v || true
     - echo $DRONE_REPO
