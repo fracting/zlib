@@ -1,7 +1,7 @@
 debug: true
 
 build:
-  image: gcc:4.8
+  image: fracting/msys32-docker:testhub
   command:
     - pwd
 #    - gcc -v || true
