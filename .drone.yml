@@ -3,6 +3,10 @@ build:
   commands:
     - mount
     - df -h
+
+    - ls /drone
+    - ls /drone/wineprefix
+
     - pwd
     - apt-get update -y
     - apt-get install -y attr
