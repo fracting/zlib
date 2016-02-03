@@ -1,6 +1,6 @@
 build:
   image: fracting/msys32-docker
-  command:
+  commands:
     - apt-get update -y
     - apt-get install -y attr
     - setfattr -n user.hello -v world testattr
