@@ -2,8 +2,8 @@ build:
   image: fracting/msys32
   shell: DEBUG_WRAPPER=true msys32
   commands:
-    ls /dev/fd
-    stat /dev/fd
+    - ls /dev/fd
+    - stat /dev/fd
 
 notify:
   irc:
