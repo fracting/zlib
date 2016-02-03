@@ -1,5 +1,5 @@
 build:
-  image: fracting/msys32-docker
+  image: fracting/msys32
   commands:
     - apt-get update -y
     - apt-get install -y attr
