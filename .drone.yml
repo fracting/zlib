@@ -1,22 +1,10 @@
-debug: true
-
 build:
-  image: fracting/msys32-docker:testhub
+  image: fracting/msys32-docker
   command:
-    - pwd
-#    - gcc -v || true
-    - echo $DRONE_REPO
-    - echo $DRONE_BRANCH
-    - echo $DRONE_COMMIT
-    - echo $DRONE_DIR
-    - echo $HOME
-    - echo $USER
-#    - ls ~/.wine || true
-    - wine --version
-    - ls /usr/bin
-    - msys2-shell -c echo hello drone 
-    - false
-
+    - apt-get update -y
+    - apt-get install -y attr
+    - setfattr -n user.hello -v world testattr
+    - getfattr -n user.hello testattr
 
 notify:
   irc:
