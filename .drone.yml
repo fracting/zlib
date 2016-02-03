@@ -7,36 +7,48 @@ build:
     - touch testattr
     - setfattr -n user.hello -v world testattr
     - getfattr -n user.hello testattr
+
     - cd ..
     - pwd
+    - touch testattr
     - setfattr -n user.hello -v world testattr
     - getfattr -n user.hello testattr
+
     - cd ..
     - pwd
+    - touch testattr
     - setfattr -n user.hello -v world testattr
     - getfattr -n user.hello testattr
+
     - cd ..
     - pwd
+    - touch testattr
     - setfattr -n user.hello -v world testattr
     - getfattr -n user.hello testattr
+
     - cd ..
     - pwd
+    - touch testattr
     - setfattr -n user.hello -v world testattr
     - getfattr -n user.hello testattr
+
     - cd ..
     - pwd
+    - touch testattr
     - setfattr -n user.hello -v world testattr
     - getfattr -n user.hello testattr
+
     - cd ..
     - pwd
+    - touch testattr
     - setfattr -n user.hello -v world testattr
     - getfattr -n user.hello testattr
+
     - cd ~
     - pwd
+    - touch testattr
     - setfattr -n user.hello -v world testattr
     - getfattr -n user.hello testattr
-
-
 
 notify:
   irc:
