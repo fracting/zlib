@@ -1,6 +1,8 @@
 build:
   image: fracting/msys32
   commands:
+    - mount
+    - df -h
     - pwd
     - apt-get update -y
     - apt-get install -y attr
