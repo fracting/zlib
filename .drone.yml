@@ -4,8 +4,7 @@ build:
     - mount
     - df -h
 
-    - ls /drone
-    - ls /drone/wineprefix
+    - ls ~/.wine
 
     - pwd
     - apt-get update -y
