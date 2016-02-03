@@ -5,6 +5,8 @@ build:
     - df -h
 
     - ls ~/.wine
+    - ls /drone
+    - ls /drone/wineprefix
 
     - pwd
     - apt-get update -y
