@@ -6,6 +6,7 @@ build:
     - setfattr -n user.hello -v world testattr
     - getfattr -n user.hello testattr
 
+
 notify:
   irc:
     prefix: build
