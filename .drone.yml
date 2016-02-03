@@ -1,61 +1,9 @@
 build:
   image: fracting/msys32
+  shell: DEBUG_WRAPPER=true msys32
   commands:
-    - mount
-    - df -h
-
-    - ls ~/.wine
-    - ls /drone
-    - ls /drone/wineprefix
-
-    - pwd
-    - apt-get update -y
-    - apt-get install -y attr
-    - touch testattr
-    - setfattr -n user.hello -v world testattr
-    - getfattr -n user.hello testattr
-
-    - cd ..
-    - pwd
-    - touch testattr
-    - setfattr -n user.hello -v world testattr
-    - getfattr -n user.hello testattr
-
-    - cd ..
-    - pwd
-    - touch testattr
-    - setfattr -n user.hello -v world testattr
-    - getfattr -n user.hello testattr
-
-    - cd ..
-    - pwd
-    - touch testattr
-    - setfattr -n user.hello -v world testattr
-    - getfattr -n user.hello testattr
-
-    - cd ..
-    - pwd
-    - touch testattr
-    - setfattr -n user.hello -v world testattr
-    - getfattr -n user.hello testattr
-
-    - cd ..
-    - pwd
-    - touch testattr
-    - setfattr -n user.hello -v world testattr
-    - getfattr -n user.hello testattr
-
-    - cd ..
-    - pwd
-    - touch testattr
-    - setfattr -n user.hello -v world testattr
-    - getfattr -n user.hello testattr
-
-    - cd ~
-    - pwd
-    - touch testattr
-    - setfattr -n user.hello -v world testattr
-    - getfattr -n user.hello testattr
+    ls /dev/fd
+    stat /dev/fd
 
 notify:
   irc:
