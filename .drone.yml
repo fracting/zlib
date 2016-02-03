@@ -3,6 +3,7 @@ build:
   commands:
     - apt-get update -y
     - apt-get install -y attr
+    - touch testattr
     - setfattr -n user.hello -v world testattr
     - getfattr -n user.hello testattr
 
