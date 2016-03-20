@@ -1,9 +1,12 @@
 build:
-  image: fracting/msys32
-  shell: DEBUG_WRAPPER=true msys32
+  image: fracting/cygwin32
+  shell: cygwin
   commands:
+    - uname -a
     - ls /dev/fd
     - stat /dev/fd
+    - pwd
+    - ls -al
 
 notify:
   irc:
